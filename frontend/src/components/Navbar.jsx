@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,8 +11,16 @@ function Navbar() {
       <div className="hidden sm:flex">
         <div className="flex justify-center dark:bg-[#1A1A1A] w-1/5" />
         <div className="flex w-full justify-end bg-[#121212] w-4/5 py-6 text-xl font-semibold">
-          <div className="text-[#FFFFFF] mr-16">À PROPOS</div>
-          <div className="text-[#FFFFFF] mr-16">PARCOURS</div>
+          <div className="text-[#FFFFFF] mr-16">
+            <Link to="/">
+              <p>À PROPOS</p>
+            </Link>
+          </div>
+          <div className="text-[#FFFFFF] mr-16">
+            <Link to="/career">
+              <p>PARCOURS</p>
+            </Link>
+          </div>
           <div className="text-[#FFFFFF] mr-16">COMPÉTENCES</div>
           <div className="text-[#FFFFFF] mr-16">PROJETS</div>
           <div className="text-[#FFFFFF] mr-16">CONTACT</div>
@@ -45,7 +54,7 @@ function Navbar() {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } absolute top-0 left-0 w-full h-full z-40 bg-white`}
+          } absolute top-0 left-0 w-full z-40 bg-white`}
         >
           <div className="relative w-full bg-[#121212]">
             <button
