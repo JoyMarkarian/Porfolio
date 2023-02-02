@@ -29,31 +29,31 @@ VALUES (
         1,
         "Dragon Team",
         "Réalisation d'un projet en équipe autour de l'univers Dragon Ball Z",
-        "frontend/src/assets/DragonTeam.png",
+        "assets/images/DragonTeam.png",
         "https://github.com/JoyMarkarian/DragonTeam"
     ), (
         2,
         "PokeMall",
         "Réalisation d'un projet en équipe autour de l'univers Pokémon",
-        "frontend/src/assets/PokeMall.png",
+        "assets/images/PokeMall.png",
         "https://github.com/JoyMarkarian/PokeMall"
     ), (
         3,
         "Space Journey",
         "Elaboration, en 48 heures, d'une application web sous forme de jeu interactif",
-        "frontend/src/assets/SpaceJourney.png",
+        "assets/images/SpaceJourney.png",
         "https://github.com/JoyMarkarian/SpaceJourney"
     ), (
         4,
         "Rent A Kart",
         "Elaboration, en 72 heures, d'une application web de gestion de flotte de véhicules",
-        "frontend/src/assets/RentAKart.png",
+        "assets/images/RentAKart.png",
         "https://github.com/o6ris/NoPainNoGainTheComeBack"
     ), (
         5,
         "Make Sense",
         "Réalisation d'un intranet en équipe pour l'entreprise Make Sense",
-        "frontend/src/assets/MakeSense.png",
+        "assets/images/MakeSense.png",
         "https://github.com/WildCodeSchool/2022-09-RMT-JSCREW-Makesense"
     );
 
@@ -61,11 +61,83 @@ CREATE TABLE
     skill (
         id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
         name VARCHAR(255) NOT NULL,
+        type VARCHAR(255) NOT NULL,
         picture VARCHAR(255) NULL
     );
 
-INSERT INTO skill (id, name)
-VALUES (1, "Bootstrap"), (2, "CSS3"), (3, "Figma"), (4, "Git"), (5, "Github"), (6, "HTML5"), (7, "Javascript"), (8, "Linkedin"), (9, "MySQL"), (10, "NodeJS"), (11, "Postman"), (12, "React JS"), (13, "SQL"), (14, "Tailwind"), (15, "Visual Studio Code");
+INSERT INTO
+    skill (id, name, type, picture)
+VALUES (
+        1,
+        "Bootstrap",
+        1,
+        "/assets/images/bootstrap.svg"
+    ), (
+        2,
+        "CSS3",
+        1,
+        "assets/images/css3.svg"
+    ), (
+        3,
+        "Figma",
+        2,
+        "assets/images/figma.svg"
+    ), (
+        4,
+        "Git",
+        2,
+        "assets/images/git.svg"
+    ), (
+        5,
+        "Github",
+        2,
+        "assets/images/github.svg"
+    ), (
+        6,
+        "HTML5",
+        1,
+        "assets/images/html5.svg"
+    ), (
+        7,
+        "Javascript",
+        1,
+        "assets/images/javascript.svg"
+    ), (
+        8,
+        "MySQL",
+        2,
+        "assets/images/mysql.svg"
+    ), (
+        9,
+        "NodeJS",
+        1,
+        "assets/images/nodejs.svg"
+    ), (
+        10,
+        "Postman",
+        2,
+        "assets/images/postman.svg"
+    ), (
+        11,
+        "React JS",
+        1,
+        "assets/images/react.svg"
+    ), (
+        12,
+        "SQL",
+        1,
+        "assets/images/sql.svg"
+    ), (
+        13,
+        "Tailwind",
+        1,
+        "assets/images/tailwind.svg"
+    ), (
+        14,
+        "Visual Studio Code",
+        2,
+        "./assets/images/vscode.svg"
+    );
 
 CREATE TABLE
     skillUsed (
@@ -78,4 +150,4 @@ CREATE TABLE
 
 INSERT INTO
     skillUsed (project_id, skill_id)
-VALUES (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (1, 7), (1, 15);
+VALUES (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (1, 7), (1, 14);

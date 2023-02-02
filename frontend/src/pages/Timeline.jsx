@@ -48,7 +48,7 @@ function Timeline() {
               <h3 className="text-white">Product Manager @Lefebvre-Dalloz</h3>
               <h4 className="text-white">Août 2019 - Sept. 2022</h4>
               <p className="text-white sm:text-justify">
-                • Définition de la stratégie d’évolution et d’innovation en
+                Définition de la stratégie d’évolution et d’innovation en
                 cohérence avec la roadmap des produits et les besoins clients
                 pour le marché des professions réglementées (Avocats et
                 Notaires) • Analyse de la concurrence et les innovations et
