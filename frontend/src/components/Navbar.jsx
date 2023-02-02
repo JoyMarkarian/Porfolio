@@ -27,7 +27,11 @@ function Navbar() {
             </Link>
           </div>
           <div className="text-[#FFFFFF] mr-16">PROJETS</div>
-          <div className="text-[#FFFFFF] mr-16">CONTACT</div>
+          <div className="text-[#FFFFFF] mr-16">
+            <Link to="/contact">
+              <p>CONTACT</p>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="sm:hidden flex">
@@ -70,19 +74,19 @@ function Navbar() {
             </button>
             <div className="p-10 flex flex-col">
               <div className="text-[#FFFFFF] text-2xl font-bold py-2">
-                À PROPOS
+                <Link to="/">À PROPOS</Link>
               </div>
               <div className="text-[#FFFFFF] text-2xl font-bold py-2">
-                PARCOURS
+                <Link to="/career">PARCOURS</Link>
               </div>
               <div className="text-[#FFFFFF] text-2xl font-bold py-2">
-                COMPÉTENCES
+                <Link to="/skills">COMPÉTENCES</Link>
               </div>
               <div className="text-[#FFFFFF] text-2xl font-bold py-2">
-                PROJETS
+                <Link to="/projects">PROJETS</Link>
               </div>
               <div className="text-[#FFFFFF] text-2xl font-bold py-2">
-                CONTACT
+                <Link to="/contact">CONTACT</Link>
               </div>
             </div>
           </div>
