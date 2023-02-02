@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Timeline from "./pages/Timeline";
+import Skills from "./pages/Skills";
 
 import "./App.css";
 
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/career" element={<Timeline />} />
+        <Route path="/skills" element={<Skills />} />
       </Routes>
       <Footer />
     </Router>
