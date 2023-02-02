@@ -9,8 +9,7 @@ function Navbar() {
     <>
       <div className="hidden sm:flex">
         <div className="flex justify-center dark:bg-[#1A1A1A] w-1/5" />
-
-        <div className="flex w-full justify-end bg-[#121212] w 4/5 py-6 text-xl font-semibold">
+        <div className="flex w-full justify-end bg-[#121212] w-4/5 py-6 text-xl font-semibold">
           <div className="text-[#FFFFFF] mr-16">À PROPOS</div>
           <div className="text-[#FFFFFF] mr-16">PARCOURS</div>
           <div className="text-[#FFFFFF] mr-16">COMPÉTENCES</div>
@@ -19,7 +18,7 @@ function Navbar() {
         </div>
       </div>
       <div className="sm:hidden flex">
-        <div className="bg-[#FFFFFF] w-1/5">
+        <div className="bg-[#FFFFFF] w-1/6">
           <button
             className="p-4 space-y-2"
             onClick={() => setIsOpen(!isOpen)}
@@ -42,7 +41,7 @@ function Navbar() {
             />
           </button>
         </div>
-        <div className="bg-[#121212] w-4/5" />
+        <div className="bg-[#121212] w-5/6" />
         <div
           className={`${
             isOpen ? "block" : "hidden"
