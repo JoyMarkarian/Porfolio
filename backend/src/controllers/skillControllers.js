@@ -2,7 +2,7 @@ const models = require("../models");
 
 const browse = (req, res) => {
   models.skill
-    .findAll()
+    .findByType(req.query.type)
     .then(([rows]) => {
       res.send(rows);
     })

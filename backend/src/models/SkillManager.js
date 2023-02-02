@@ -5,6 +5,13 @@ class SkillManager extends AbstractManager {
     super({ table: "skill" });
   }
 
+  findByType(type) {
+    return this.connection.query(
+      `select * from  ${this.table} where type = ?`,
+      [type]
+    );
+  }
+
   insert(skill) {
     return this.connection.query(
       `insert into ${this.table} (name) values (?)`,
