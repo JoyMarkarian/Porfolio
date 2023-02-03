@@ -5,6 +5,13 @@ class ProjectManager extends AbstractManager {
     super({ table: "project" });
   }
 
+  find(id) {
+    return this.connection.query(
+      `select p.id, p.name, p.picture, p.description, p.githubLink from ${this.table} as p where p.id = ?`,
+      [id]
+    );
+  }
+
   insert(project) {
     return this.connection.query(
       `insert into ${this.table} (title) values (?)`,
