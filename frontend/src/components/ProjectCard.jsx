@@ -16,7 +16,7 @@ function ProjectCard({ project }) {
           {project.name}
         </h5>
       </div>
-      <Link to={`projects/${project.id}`}>
+      <Link to={`/projects/${project.id}`}>
         <button
           type="button"
           className="
