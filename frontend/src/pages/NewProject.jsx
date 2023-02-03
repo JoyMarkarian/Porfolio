@@ -31,25 +31,6 @@ function NewProject() {
       });
   };
 
-  // const submit = (user, value = null) => {
-  //   confirmAlert({
-  //     title:
-  //       value === null
-  //         ? `Confirmez-vous la suppression de l'utilisateur "${user.firstname} ${user.lastname}" ?`
-  //         : `Confirmez-vous le changement de rôle de l'utilisateur "${user.firstname} ${user.lastname}" ?`,
-  //     buttons: [
-  //       {
-  //         label: "Non",
-  //       },
-  //       {
-  //         label: "Oui",
-  //         onClick: () =>
-  //           value === null ? deleteUser(user) : handleNewRole(user, value),
-  //       },
-  //     ],
-  //   });
-  // };
-
   return (
     <>
       <Background />
