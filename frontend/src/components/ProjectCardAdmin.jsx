@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-// import { Link } from "react-router-dom";
 
-function ProjectCard({ project }) {
+function ProjectCard({ project, handleDeleteProject }) {
   return (
     <div className="max-w-sm bg-[#FFFFFF] border-4 border-[#AA2020] rounded-lg shadow w-3/4 sm:w-1/2 mx-2 my-8 text-center">
       <img
@@ -17,6 +16,7 @@ function ProjectCard({ project }) {
         </h5>
       </div>
       <button
+        onClick={() => handleDeleteProject(project)}
         type="button"
         className="
         px-4

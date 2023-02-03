@@ -19,7 +19,7 @@ function NewProject() {
     setProject(newProject);
   };
 
-  const addProject = (e) => {
+  const handleAddProject = (e) => {
     e.preventDefault();
     apiConnexion
       .post("/projects", { ...project })
@@ -45,7 +45,7 @@ function NewProject() {
             <h2 className="text-2xl sm:text-3xl font-bold mt-5 mb-12">
               Ajouter un nouveau projet
             </h2>
-            <form onSubmit={(e) => addProject(e)}>
+            <form onSubmit={(e) => handleAddProject(e)}>
               <div className="form-group mb-6">
                 <input
                   type="text"

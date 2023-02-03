@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import apiConnexion from "../services/apiConnexion";
-import ProjectCardAmin from "../components/ProjectCardAdmin";
+import ProjectCardAdmin from "../components/ProjectCardAdmin";
 import Background from "../components/Background";
 
 function Admin() {
@@ -16,6 +16,21 @@ function Admin() {
       })
       .catch((err) => console.error(err));
   }, []);
+
+  const deleteProject = (project) => {
+    const newProject = [...projects];
+    newProject.splice(projects.indexOf(project), 1);
+    setProjects(newProject);
+  };
+
+  const handleDeleteProject = (project) => {
+    apiConnexion
+      .delete(`projects/${project.id}`)
+      .then(() => {
+        deleteProject(project);
+      })
+      .catch((err) => console.error(err));
+  };
 
   return (
     <>
@@ -55,7 +70,13 @@ function Admin() {
           <div className="flex flex-wrap sm:flex justify-evenly pb-8 ">
             {projects &&
               projects.map((project) => {
-                return <ProjectCardAmin key={project.id} project={project} />;
+                return (
+                  <ProjectCardAdmin
+                    key={project.id}
+                    project={project}
+                    handleDeleteProject={handleDeleteProject}
+                  />
+                );
               })}
           </div>
         </div>
