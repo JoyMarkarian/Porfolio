@@ -14,16 +14,22 @@ class ProjectManager extends AbstractManager {
 
   insert(project) {
     return this.connection.query(
-      `insert into ${this.table} (title) values (?)`,
-      [project.title]
+      `insert into ${this.table} (name, picture, description, githubLink) values (?, ?, ?, ?)`,
+      [project.name, project.description, project.picture, project.githubLink]
     );
   }
 
   update(project) {
     return this.connection.query(
-      `update ${this.table} set title = ? where id = ?`,
-      [project.title, project.id]
+      `update ${this.table} as p set p.name = ? p.picture = ? p.description = ? p.githubLink = ? where id = ?`,
+      [project.name, project.description, project.picture, project.githubLink]
     );
+  }
+
+  delete(id) {
+    return this.connection.query(`delete from ${this.table} where id = ?`, [
+      id,
+    ]);
   }
 }
 
