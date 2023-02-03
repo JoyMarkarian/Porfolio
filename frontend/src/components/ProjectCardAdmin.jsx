@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ProjectCard({ project, handleDeleteProject }) {
   return (
@@ -40,9 +41,10 @@ function ProjectCard({ project, handleDeleteProject }) {
       >
         Supprimer
       </button>
-      <button
-        type="button"
-        className="
+      <Link to={`/admin/projects/${project.id}/update`}>
+        <button
+          type="button"
+          className="
         px-6
         py-2.5
         mb-4
@@ -61,9 +63,10 @@ function ProjectCard({ project, handleDeleteProject }) {
         transition
         duration-150
         ease-in-out"
-      >
-        Modifier
-      </button>
+        >
+          Modifier
+        </button>
+      </Link>
     </div>
   );
 }

@@ -19,11 +19,11 @@ class ProjectManager extends AbstractManager {
     );
   }
 
-  update(project) {
-    return this.connection.query(
-      `update ${this.table} as p set p.name = ? p.picture = ? p.description = ? p.githubLink = ? where id = ?`,
-      [project.name, project.description, project.picture, project.githubLink]
-    );
+  update(project, id) {
+    return this.connection.query(`update ${this.table} set ? where id = ?`, [
+      project,
+      id,
+    ]);
   }
 
   delete(id) {
