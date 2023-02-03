@@ -142,12 +142,12 @@ VALUES (
 CREATE TABLE
     skillUsed (
         id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-        project_id INT NOT NULL,
+        project_id INT NULL,
         CONSTRAINT fk_skillUsed_project FOREIGN KEY (project_id) REFERENCES project(id),
-        skill_id INT NOT NULL,
+        skill_id INT NULL,
         CONSTRAINT fk_skillUsed_skill FOREIGN KEY (skill_id) REFERENCES skill(id)
     );
 
 INSERT INTO
     skillUsed (project_id, skill_id)
-VALUES (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (1, 7), (1, 14);
+VALUES (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (1, 7), (1, 14), (2, 2), (2, 3), (2, 4), (2, 5), (2, 6), (2, 7), (2, 14), (3, 2), (3, 3), (3, 4), (3, 5), (3, 6), (3, 7), (3, 14), (4, 2), (4, 3), (4, 4), (4, 5), (4, 6), (4, 7), (4, 14), (5, 2), (5, 3), (5, 4), (5, 5), (5, 6), (5, 7), (5, 14);
