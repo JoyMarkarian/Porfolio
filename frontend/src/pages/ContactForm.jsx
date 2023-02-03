@@ -60,7 +60,7 @@ function ContactForm() {
           font-normal
           text-gray-700
           bg-white bg-clip-padding
-          border border-solid border-[#AA2020]
+          border border-solid border-[#AA2020] border-2
           rounded
           transition
           ease-in-out
@@ -84,7 +84,7 @@ function ContactForm() {
           font-normal
           text-gray-700
           bg-white bg-clip-padding
-          border border-solid border-[#AA2020]
+          border border-solid border-[#AA2020] border-2
           rounded
           transition
           ease-in-out
@@ -109,7 +109,7 @@ function ContactForm() {
           font-normal
           text-gray-700
           bg-white bg-clip-padding
-          border border-solid border-[#AA2020] border-4
+          border border-solid border-[#AA2020] border-2
           rounded
           transition
           ease-in-out

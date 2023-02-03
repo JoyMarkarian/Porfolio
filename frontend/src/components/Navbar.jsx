@@ -26,7 +26,11 @@ function Navbar() {
               <p>COMPÉTENCES</p>
             </Link>
           </div>
-          <div className="text-[#FFFFFF] mr-16">PROJETS</div>
+          <div className="text-[#FFFFFF] mr-16">
+            <Link to="/projects">
+              <p>PROJETS</p>
+            </Link>
+          </div>
           <div className="text-[#FFFFFF] mr-16">
             <Link to="/contact">
               <p>CONTACT</p>

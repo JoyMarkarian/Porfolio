@@ -12,6 +12,13 @@ class SkillManager extends AbstractManager {
     );
   }
 
+  findByProject(id) {
+    return this.connection.query(
+      `select s.id, s.name, s.type, s.picture from ${this.table} as s inner join skillUsed as su on s.id = su.skill_id where su.project_id = ?`,
+      [id]
+    );
+  }
+
   insert(skill) {
     return this.connection.query(
       `insert into ${this.table} (name) values (?)`,

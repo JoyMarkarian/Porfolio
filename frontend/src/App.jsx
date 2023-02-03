@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Timeline from "./pages/Timeline";
 import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
+import OneProject from "./pages/OneProject";
 import ContactForm from "./pages/ContactForm";
 import Footer from "./components/Footer";
 
@@ -16,6 +18,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/career" element={<Timeline />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:id" element={<OneProject />} />
         <Route path="/contact" element={<ContactForm />} />
       </Routes>
       <Footer />
