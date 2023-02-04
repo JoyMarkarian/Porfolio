@@ -1,7 +1,13 @@
 import React from "react";
 import Background from "../components/Background";
+import editMeta from "../services/seo";
 
 function Home() {
+  editMeta(
+    "À propos",
+    "Découvrez mon portfolio en tant que développeur web, mettant en avant mes compétences en développement front-end et back-end ainsi que mes projets récents. Contactez-moi pour tout renseignement."
+  );
+
   return (
     <>
       <Background />
