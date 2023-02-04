@@ -9,6 +9,7 @@ import ContactForm from "./pages/ContactForm";
 import Admin from "./pages/Admin";
 import NewProject from "./pages/NewProject";
 import UpdateProject from "./pages/UpdateProject";
+import BackToTop from "./components/BackToTop";
 import Footer from "./components/Footer";
 
 import "./App.css";
@@ -28,6 +29,7 @@ function App() {
         <Route path="/admin/projects/add" element={<NewProject />} />
         <Route path="/admin/projects/:id/update" element={<UpdateProject />} />
       </Routes>
+      <BackToTop />
       <Footer />
     </Router>
   );
