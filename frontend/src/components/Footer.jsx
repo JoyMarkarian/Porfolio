@@ -22,7 +22,7 @@ function Footer() {
         >
           <img src={Linkedin} alt="GitHub" className="my-2 sm:m-2" />
         </a>
-      </div>{" "}
+      </div>
       <div className="flex justify-center dark:bg-[#1A1A1A] w-4/5 w-full dark:bg-[#1A1A1A] py-6 text-l">
         <p className="dark:text-white ">
           <Link to="/admin">Joy MARKARIAN</Link> © Tous droits réservés
