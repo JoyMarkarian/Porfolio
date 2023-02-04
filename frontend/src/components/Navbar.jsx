@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import DarkMode from "./DarkMode";
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
@@ -9,7 +11,9 @@ function Navbar() {
   return (
     <>
       <div className="hidden sm:flex">
-        <div className="flex justify-center dark:bg-[#1A1A1A] w-1/5" />
+        <div className="flex justify-center dark:bg-[#1A1A1A] w-1/5">
+          <DarkMode />
+        </div>
         <div className="flex w-full justify-end bg-[#121212] w-4/5 py-6 text-xl font-semibold">
           <div className="text-[#FFFFFF] mr-16">
             <Link to="/">
