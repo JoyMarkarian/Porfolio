@@ -52,7 +52,7 @@ function UpdateProject() {
     <>
       <Background />
       <div className="flex w-full">
-        <div className="bg-[#FFFFFF] w-1/6 dark:bg-[#1A1A1A] flex justify-center items-center">
+        <div className="bg-[#FFFFFF] w-1/6 dark:bg-[#313131] flex justify-center items-center">
           <h1 className="whitespace-nowrap -rotate-90 text-[#1A1A1A] dark:text-[#FFFFFF] text-2xl sm:text-4xl font-bold">
             MODIFICATION DU PROJET
           </h1>

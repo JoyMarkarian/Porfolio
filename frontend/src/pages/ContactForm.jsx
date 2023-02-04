@@ -40,14 +40,14 @@ function ContactForm() {
     <div>
       <Background />
       <div className="flex w-full">
-        <div className="bg-[#FFFFFF] w-1/6 dark:bg-[#1A1A1A] flex justify-center items-center">
+        <div className="bg-[#FFFFFF] w-1/6 dark:bg-[#313131] flex justify-center items-center">
           <h1 className="-rotate-90 text-[#1A1A1A] dark:text-[#FFFFFF] text-2xl sm:text-4xl font-bold">
             CONTACT
           </h1>
         </div>
         <div
           id="form"
-          className="container bg-[#1A1A1A] dark:bg-[#121212] w-5/6 py-8 sm:py-16"
+          className="container bg-[#313131] dark:bg-[#121212] w-5/6 py-8 sm:py-16"
         >
           <section className="text-center text-white">
             <div className="w-4/5 mx-auto px-3 lg:px-6 rounded-xl border-4 border-[#AA2020] ">
@@ -164,7 +164,7 @@ function ContactForm() {
     <div>
       <Background />
       <div className="flex w-full">
-        <div className="bg-[#FFFFFF] w-1/6 dark:bg-[#1A1A1A] flex justify-center items-center">
+        <div className="bg-[#FFFFFF] w-1/6 dark:bg-[#313131] flex justify-center items-center">
           <h1 className="-rotate-90 text-[#1A1A1A] dark:text-[#FFFFFF] text-2xl sm:text-4xl font-bold">
             CONTACT
           </h1>
