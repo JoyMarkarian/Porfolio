@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <>
       <div className="hidden sm:flex">
-        <div className="flex justify-center dark:bg-[#1A1A1A] w-1/5">
+        <div className="flex justify-center dark:bg-[#313131] w-1/5">
           <DarkMode />
         </div>
         <div className="flex w-full justify-end bg-[#121212] w-4/5 py-6 text-xl font-semibold">
