@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import editMeta from "../services/seo";
 import apiConnexion from "../services/apiConnexion";
 import ProjectCardAdmin from "../components/ProjectCardAdmin";
 import Background from "../components/Background";
 
 function Admin() {
+  editMeta("Back-office", "Espace administrateur");
   const [projects, setProjects] = useState();
 
   useEffect(() => {

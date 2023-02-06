@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import editMeta from "../services/seo";
 import Background from "../components/Background";
 
 function Home() {
+  editMeta("Erreur 404", "Cette page n'existe pas.");
   return (
     <>
       <Background />
