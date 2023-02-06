@@ -5,11 +5,13 @@ const router = express.Router();
 const projectControllers = require("./controllers/projectControllers");
 const skillControllers = require("./controllers/skillControllers");
 const contactControllers = require("./controllers/contactControllers");
+const userControllers = require("./controllers/userControllers");
 
 router.get("/projects", projectControllers.browse);
 router.get("/projects/:id", projectControllers.read);
 router.put("/projects/:id", projectControllers.edit);
 router.post("/projects", projectControllers.add);
+router.post("/login", userControllers.validateUser);
 router.post("/sendEmail", contactControllers.sendMail);
 router.delete("/projects/:id", projectControllers.destroy);
 
