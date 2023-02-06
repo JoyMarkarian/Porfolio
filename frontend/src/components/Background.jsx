@@ -8,8 +8,8 @@ function Background() {
           DÉVELOPPEUR WEB
         </h1>
       </div>
-      <div className="bg-[#FFFFFF] dark:bg-[#313131] flex justify-center items-center w-5/6 ">
-        <h1 className="text-[#1A1A1A] dark:text-[#FFFFFF] text-4xl sm:text-7xl font-extrabold text-center">
+      <div className="bg-cover flex justify-center items-center w-5/6 ">
+        <h1 className="text-[#FFFFFF] text-4xl sm:text-7xl font-extrabold text-center">
           JOY MARKARIAN
         </h1>
       </div>
