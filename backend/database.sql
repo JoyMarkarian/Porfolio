@@ -29,31 +29,31 @@ VALUES (
         1,
         "Dragon Team",
         "Réalisation d'un projet en équipe autour de l'univers Dragon Ball Z",
-        "assets/images/DragonTeam.png",
+        "https://i.ibb.co/ThHjvjB/Dragon-Team-copy.png",
         "https://github.com/JoyMarkarian/DragonTeam"
     ), (
         2,
         "PokeMall",
         "Réalisation d'un projet en équipe autour de l'univers Pokémon",
-        "assets/images/PokeMall.png",
+        "https://i.ibb.co/7k8pXN5/Poke-Mall-copy.png",
         "https://github.com/JoyMarkarian/PokeMall"
     ), (
         3,
         "Space Journey",
         "Elaboration, en 48 heures, d'une application web sous forme de jeu interactif",
-        "assets/images/SpaceJourney.png",
+        "https://i.ibb.co/7txKygC/Space-Journey-copy.png",
         "https://github.com/JoyMarkarian/SpaceJourney"
     ), (
         4,
         "Rent A Kart",
         "Elaboration, en 72 heures, d'une application web de gestion de flotte de véhicules",
-        "assets/images/RentAKart.png",
+        "https://i.ibb.co/pRJ3JwB/Rent-AKart-copy.png",
         "https://github.com/o6ris/NoPainNoGainTheComeBack"
     ), (
         5,
         "Make Sense",
         "Réalisation d'un intranet en équipe pour l'entreprise Make Sense",
-        "assets/images/MakeSense.png",
+        "https://i.ibb.co/HpzJ1yj/Make-Sense-copy.png",
         "https://github.com/WildCodeSchool/2022-09-RMT-JSCREW-Makesense"
     );
 
