@@ -7,14 +7,14 @@ class ProjectManager extends AbstractManager {
 
   find(id) {
     return this.connection.query(
-      `select p.id, p.name, p.picture, p.description, p.githubLink from ${this.table} as p where p.id = ?`,
+      `select p.id, p.name, p.description, p.picture, p.githubLink from ${this.table} as p where p.id = ?`,
       [id]
     );
   }
 
   insert(project) {
     return this.connection.query(
-      `insert into ${this.table} (name, picture, description, githubLink) values (?, ?, ?, ?)`,
+      `insert into ${this.table} (name, description, picture, githubLink) values (?, ?, ?, ?)`,
       [project.name, project.description, project.picture, project.githubLink]
     );
   }

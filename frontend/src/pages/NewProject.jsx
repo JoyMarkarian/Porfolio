@@ -65,8 +65,8 @@ function NewProject() {
                   focus:text-gray-700 focus:bg-white focus:border-[#AA2020] focus:outline-none"
                   id="exampleInput7"
                   placeholder="Nom du projet"
-                  name="project_name"
-                  value={project.project_name}
+                  name="name"
+                  value={project.name}
                   onChange={(e) => handleProject(e.target.name, e.target.value)}
                   required
                 />
@@ -90,9 +90,9 @@ function NewProject() {
                   focus:text-gray-700 focus:bg-white focus:border-[#AA2020] focus:outline-none"
                   id="exampleInput8"
                   placeholder="Description du projet"
-                  name="project_description"
+                  name="description"
                   required
-                  value={project.project_description}
+                  value={project.description}
                   onChange={(e) => handleProject(e.target.name, e.target.value)}
                 />
               </div>
@@ -115,8 +115,8 @@ function NewProject() {
                   focus:text-gray-700 focus:bg-white focus:border-[#AA2020] focus:outline-none"
                   id="exampleInput8"
                   placeholder="Photo du projet"
-                  name="project_picture"
-                  value={project.project_picture}
+                  name="picture"
+                  value={project.picture}
                   onChange={(e) => handleProject(e.target.name, e.target.value)}
                 />
               </div>
@@ -139,8 +139,8 @@ function NewProject() {
                   focus:text-gray-700 focus:bg-white focus:border-[#AA2020] focus:outline-none"
                   id="exampleInput8"
                   placeholder="Lien GitHub"
-                  name="project_githubLink"
-                  value={project.project_githubLink}
+                  name="githubLink"
+                  value={project.githubLink}
                   onChange={(e) => handleProject(e.target.name, e.target.value)}
                 />
               </div>

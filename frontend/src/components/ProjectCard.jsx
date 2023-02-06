@@ -8,7 +8,7 @@ function ProjectCard({ project }) {
     <div className="max-w-sm bg-[#FFFFFF] border-4 border-[#AA2020] rounded-lg shadow w-3/4 sm:w-1/2 mx-2 my-8 text-center">
       <img
         className="object-cover rounded-t-lg h-60 w-full"
-        src={`${import.meta.env.VITE_BACKEND_URL}/${project.picture}`}
+        src={project.picture}
         alt={project.name}
       />
       <div>

@@ -17,7 +17,6 @@ function UpdateProject() {
       })
       .catch((err) => {
         console.error(err);
-        navigate("/admin");
       });
   };
 
@@ -107,7 +106,7 @@ function UpdateProject() {
                   focus:text-gray-700 focus:bg-white focus:border-[#AA2020] focus:outline-none"
                   id="exampleInput8"
                   placeholder="Description du projet"
-                  name="project_description"
+                  name="description"
                   required
                   value={project.description}
                   onChange={(e) => handleProject(e.target.name, e.target.value)}
@@ -132,7 +131,7 @@ function UpdateProject() {
                   focus:text-gray-700 focus:bg-white focus:border-[#AA2020] focus:outline-none"
                   id="exampleInput8"
                   placeholder="Photo du projet"
-                  name="project_picture"
+                  name="picture"
                   value={project.picture}
                   onChange={(e) => handleProject(e.target.name, e.target.value)}
                   required
@@ -157,7 +156,7 @@ function UpdateProject() {
                   focus:text-gray-700 focus:bg-white focus:border-[#AA2020] focus:outline-none"
                   id="exampleInput8"
                   placeholder="Lien GitHub"
-                  name="project_githubLink"
+                  name="githubLink"
                   value={project.githubLink}
                   onChange={(e) => handleProject(e.target.name, e.target.value)}
                   required
