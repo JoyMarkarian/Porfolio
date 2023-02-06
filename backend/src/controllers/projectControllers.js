@@ -1,4 +1,5 @@
 const models = require("../models");
+const validate = require("../services/projects");
 
 const browse = (req, res) => {
   models.project
@@ -32,40 +33,45 @@ const read = (req, res) => {
 
 const edit = (req, res) => {
   const project = req.body;
-
-  // TODO validations (length, format...)
-
+  const validation = validate(project, "optional");
   const id = parseInt(req.params.id, 10);
 
-  models.project
-    .update(project, id)
-    .then(([result]) => {
-      if (result.affectedRows === 0) {
-        res.sendStatus(404);
-      } else {
-        res.sendStatus(204);
-      }
-    })
-    .catch((err) => {
-      console.error(err);
-      res.sendStatus(500);
-    });
+  if (validation) {
+    res.status(422).send(validation);
+  } else {
+    models.project
+      .update(project, id)
+      .then(([result]) => {
+        if (result.affectedRows === 0) {
+          res.sendStatus(404);
+        } else {
+          res.sendStatus(204);
+        }
+      })
+      .catch((err) => {
+        console.error(err);
+        res.sendStatus(500);
+      });
+  }
 };
 
 const add = (req, res) => {
   const project = req.body;
+  const error = validate(project, "required");
 
-  // TODO validations (length, format...)
-
-  models.project
-    .insert(project)
-    .then(([result]) => {
-      res.location(`/projects/${result.insertId}`).sendStatus(201);
-    })
-    .catch((err) => {
-      console.error(err);
-      res.sendStatus(500);
-    });
+  if (!error) {
+    models.project
+      .insert(project)
+      .then(([result]) => {
+        res.location(`/projects/${result.insertId}`).sendStatus(201);
+      })
+      .catch((err) => {
+        console.error(err);
+        res.sendStatus(500);
+      });
+  } else {
+    res.status(422).send(error);
+  }
 };
 
 const destroy = (req, res) => {
