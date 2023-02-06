@@ -52,7 +52,6 @@ function Home() {
         transition
         duration-150
         ease-in-out"
-                  onClick={(e) => handleSubmit(e)}
                 >
                   RETOUR
                 </button>
