@@ -20,11 +20,7 @@ const read = (req, res) => {
         res.sendStatus(404);
       } else {
         models.skill.findByProject(req.params.id).then(([skill]) => {
-          if (skill[0] == null) {
-            res.sendStatus(404);
-          } else {
-            res.send({ ...rows[0], skills: skill });
-          }
+          res.send({ ...rows[0], skills: skill });
         });
       }
     })

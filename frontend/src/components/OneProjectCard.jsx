@@ -12,7 +12,7 @@ function OneProjectCard({ oneProject }) {
       </h1>
       <img
         className="object-cover rounded-t-lg w-full"
-        src={`${import.meta.env.VITE_BACKEND_URL}/${oneProject.picture}`}
+        src={oneProject.picture}
         alt={oneProject.name}
       />
       <div className="mb-6">
