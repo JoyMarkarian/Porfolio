@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ErrorPage from "./pages/ErrorPage";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Timeline from "./pages/Timeline";
@@ -19,6 +20,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
+        <Route path="*" element={<ErrorPage />} />
         <Route path="/" element={<Home />} />
         <Route path="/career" element={<Timeline />} />
         <Route path="/skills" element={<Skills />} />
