@@ -50,7 +50,7 @@ function ContactForm() {
           className="container bg-[#1A1A1A] dark:bg-[#121212] w-5/6 py-8 sm:py-16"
         >
           <section className="text-center text-white">
-            <div className="w-4/5 mx-auto px-3 lg:px-6 rounded-xl border-4 border-[#AA2020] ">
+            <div className="w-4/5 mx-auto px-3 lg:px-6 rounded-xl border-4 border-[#AA2020]">
               <h2 className="text-2xl sm:text-3xl font-bold mt-5 mb-12">
                 Contactez-moi
               </h2>

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -24,9 +25,11 @@ function Footer() {
         </a>
       </div>
       <div className="flex justify-center dark:bg-[#313131] w-4/5 w-full py-6 text-l">
-        <p className="dark:text-white ">
-          <Link to="/admin">Joy MARKARIAN</Link> © Tous droits réservés
-        </p>
+        <Link to="/login">
+          <p className="dark:text-white ">
+            Joy MARKARIAN © Tous droits réservés
+          </p>
+        </Link>
       </div>
     </div>
   );
