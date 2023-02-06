@@ -7,7 +7,7 @@ import Linkedin from "../assets/linkedin.svg";
 function Footer() {
   return (
     <div className="flex">
-      <div className="flex justify-center bg-[#1A1A1A] dark:bg-[#121212] w-1/5">
+      <div className="bg-cover flex justify-center bg-[#1A1A1A] dark:bg-[#121212] w-1/5 ">
         <a
           href="https://github.com/JoyMarkarian"
           target="_blank"

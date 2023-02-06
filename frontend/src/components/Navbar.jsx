@@ -14,7 +14,7 @@ function Navbar() {
         <div className="flex justify-center dark:bg-[#313131] w-1/5">
           <DarkMode />
         </div>
-        <div className="flex w-full justify-end bg-[#121212] w-4/5 py-6 text-xl font-semibold">
+        <div className="flex w-full justify-end bg-[#1A1A1A] dark:bg-[#121212] w-4/5 py-6 text-xl font-semibold">
           <div className="text-[#FFFFFF] mr-16">
             <Link to="/">
               <p>À PROPOS</p>

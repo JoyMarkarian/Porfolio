@@ -13,6 +13,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.bg-cover {
+  background-image: url("https://i.ibb.co/fMsR2z9/background.jpg");
+  background-size: cover;
+}
+
 .timeline-container {
   padding: 30px 0;
   position: relative;
